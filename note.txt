@@ -1,0 +1,21 @@
+*NEED TO DOWNLOAD BEFORE WORKING ON THIS PROJECT
+
+node.js
+yarn
+atom
+git init
+github.com/remchi/bookworm-react
+
+*atom
+prettier-atom
+linter
+linter-eslint
+
+* For website js
+yarn add --dev redux-devtools-extension eslint prettier eslint-config-airbnb@^15.0.1 eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y@^5.1.1
+
+yarn add axios redux react-redux redux-thunk prop-types react-router react-router-dom semantic-ui-react semantic-ui-css validator
+
+* For api
+yarn add --dev babel-cli babel-preset-env nodemon
+yarn add express
