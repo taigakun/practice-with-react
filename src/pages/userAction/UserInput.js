@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 
 class UserInput extends Component{
+  constructor(props){
+    super(props)
+    this.onClick = this.onClick.bind(this)
+  }
+
+  onClick(){
+    this.props.update(this._newText.value)
+  }
+
   render(){
     return(
       <div className = {this.props.className}>
-        <form onSubmit={this.props.onSubmit}>
-          <input type="text" value={this.props.value} ref={input => this._newText = input} />
-          <button onclick={this.props.onClick} id="send">send</button>
+        <form>
+          <input type="text" ref={input => this._newText = input} />
+          <button onClick={this.onClick} id="send">send</button>
         </form>
       </div>
     )
